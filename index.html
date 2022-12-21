@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type = "text/javascript">  
+		function clickCripto() {
+			let texto = document.getElementById("mensagem").value;
+			texto = texto.replace("a", "ai")
+			texto = texto.replace("e", "enter")
+			texto = texto.replace("i", "imes")
+			texto = texto.replace("o", "ober")
+			texto = texto.replace("u", "ufat")
+			document.getElementById("resultado-mensagem").value = texto;
+	}
+		function clickDecripto() {
+			let texto = document.getElementById("mensagem").value;
+			texto = texto.replace("ai", "a")
+			texto = texto.replace("enter", "e")
+			texto = texto.replace("imes", "i")
+			texto = texto.replace("ober", "o")
+			texto = texto.replace("ufat", "u")
+			document.getElementById("resultado-mensagem").value = texto;
+	}
+		function copiaCola() {
+			let copiaTexto = document.getElementById("resultado-mensagem");
+			copiaTexto.select();
+			document.execCommand("copy");
+	}
+
+  	</script>
+
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Pandaipto</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img id="logo" src="p-de-panda.jpg" width="80" height="80"></h1>
+			<p id="subtitulo">Converse por código com quem você quiser, utilizando Pandaipto!</p>
+		</div>
+	</header>
+
+	<main>
+		<form>
+			<div>
+				<p id="aviso">&#128505; Atenção! Utilize apenas letras mínusculas e não utilize acentos e/ou caracteres especiais</p>
+				<label for="mensagem"></label>
+				<textarea cols="100" rows="10" maxlength="1000" id="mensagem" placeholder="Digite seu texto aqui!"></textarea>
+
+				<input type="button" id="criptografar" value="Criptografar" class="botao" onclick="clickCripto()">
+				<input type="button" id="decriptografar" value="Decriptografar" class="botao" onclick="clickDecripto()">
+
+				<label for="resultado-mensagem"></label>
+				<textarea cols="100" rows="10" maxlength="1000" id="resultado-mensagem" placeholder="O resultado aparecerá aqui." readonly></textarea>
+
+				<input type="button" id="copiar" value="Copiar" class="botaoCopiar" onclick="copiaCola()">
+
+			</div>
+		</form>
+	</main>
+	
+	<footer>
+		<img id="imagem-rodape" src="panda-rodape-3.jpg" width="50" height="40">
+		<p class="copyright">&copy; Copyright Ben Catalani 2022 </p>
+	</footer>
+
+</body>
+</html>

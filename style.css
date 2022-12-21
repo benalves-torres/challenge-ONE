@@ -1,0 +1,95 @@
+body {
+	font-family: 'Concert One', cursiva;
+}
+header {
+	padding: 20px 0;
+
+}
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+#logo {
+	padding: 50px;
+}
+
+#subtitulo {
+
+	position: absolute;
+	top: 90px;
+	right: 120px;
+	font-size: 18px;
+	
+}
+
+#aviso {
+	text-align: center;
+	font-size: 15px;
+	color: skyblue;
+}
+
+#mensagem {
+	margin: 40px 100px ;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px dashed;
+}
+
+#resultado-mensagem {
+	margin: 50px 100px 20px;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px dashed;
+}
+div {
+	width: 1000px;
+	margin: 0 auto;
+}
+.botao {
+
+	background: lightpink;
+	width: 25%;
+	margin: 10px 110px 0;
+	padding: 25px 50px;
+	font-weight: bold;
+	font-size: 15px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s background;
+	cursor: pointer;
+}
+
+.botao:hover {
+	background: #CC666C;
+}
+.botaoCopiar:hover {
+	background: #CC666C;
+}
+.botaoCopiar {
+	
+	background: lightpink;
+	width: 25%;
+	border: none;
+	border-radius: 10px;
+	transition: 1s background;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 0 100px 0;
+	padding: 5px 10px;
+
+}
+footer {
+	text-align: center;
+	margin: 80px auto;
+}
+.copyright {
+	font-size: 15px;
+	margin: 10px 0 0;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
